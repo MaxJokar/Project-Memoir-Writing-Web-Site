@@ -1,0 +1,28 @@
+{% extends 'main_template.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %} writing memoir {% endblock title %}
+
+{% block content %}
+<h1 class= "text-center text-primary"> USER ENTERANCE</h1>
+<div class="row justify-contentmd-center">
+    <form action="" method="post" class="col-md-6 " enctype="multipart/form-data">
+        {% csrf_token %}
+
+        {{ memoir_form | crispy }}
+
+        {{ image_formset.management_form }}
+        {% for form in  image_formset  %}
+            {{ form | crispy }}
+        {% endfor %}
+
+
+
+        <input type="submit" value="Register Memoir" class="btn btn-success btn-block">
+    </form>
+</div>
+
+{% endblock content %}
+
+
+

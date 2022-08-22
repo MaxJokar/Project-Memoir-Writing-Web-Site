@@ -1,0 +1,30 @@
+{% extends 'main_template.html' %}
+{% block title %} writing memoir {% endblock title %}
+
+{% block content %}
+  {% include 'partials/slider.html' %}
+  <h1 class="text_center text-primary">Share Your  Memoir With Us!  </h1>
+
+  {% for memoir in memoirs %}
+    <div class="card" >
+      <div class="card-body">
+          <h5 class="card-title">Title of YOur  Memoir</h5>
+          <h5 class="card-title">{{memoir.memoir_title}}</h5>
+
+          <p class="card-text">
+            {{ memoir.memoir_text }}
+            Once upon a time ,I was going ...
+            My mother said,.........
+            I had no Idea why......
+            Then she told me about....
+            But , later we  realized that He  had not sold his car.
+          </p>
+          <img class="card-img-top" src="{{media_url}}images/building.png" class='img-thumbnail img-120' alt="">
+
+      </div>
+    </div>
+    {% endfor %}
+{% endblock content %}
+
+
+

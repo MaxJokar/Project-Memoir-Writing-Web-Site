@@ -1,0 +1,19 @@
+{% extends 'main_template.html' %}
+
+{% block title %} Enterance the User {% endblock title %}
+
+{% block content %}
+    <h1 class= "text-center text-primary"> USER ENTERANCE</h1>
+    <div class="row justify-contentmd-center">
+        <form action="" method="post" class="col-md-6 " novalidate>
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type="Submit" value="ENTER" class="btn btn-primary  btn-block"/>
+        </form>
+    </div>
+
+
+{% endblock content %}
+
+
+
