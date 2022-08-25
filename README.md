@@ -1,4 +1,4 @@
-# Project-Memoir-Writing-Web-Site: you can  log in and share  your  memoir with some pictures .
+# Project-Memoir-Writing-Web-Site: you can  log in and share  your  memoir with some pictures .Customizing authenticaion in Django Admin Panel
 
 pip install django-crispy-form
 python -m pip insatll pillow 
