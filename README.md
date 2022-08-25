@@ -1,4 +1,4 @@
-# Project-Memoir-Writing-Web-Site: you can  log in and share  your  memoir with some pictures .Customizing authenticaion in Django Admin Panel,Login Required Mixing,
+# Project-Memoir-Writing-Web-Site: you can:  log in, share  your  memoir with some other  pictures and people Login in or Registerded, see their photos ,Like/Dislike block /Unblock them  using a  nice panel +mysql Server and  Djano Admin panel to manage all  .Customizing authenticaion in Django Admin Panel,Login Required Mixing,
 
 pip install django-crispy-form
 python -m pip insatll pillow 
